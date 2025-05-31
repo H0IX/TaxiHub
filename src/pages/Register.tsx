@@ -79,26 +79,26 @@ const Register: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">Create your account</h2>
-        <p className="mt-2 text-center text-sm text-gray-600">
+        <h2 className="mt-6 text-center text-3xl font-bold text-gray-900 dark:text-white">Create your account</h2>
+        <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
           Or{' '}
-          <Link to="/login" className="font-medium text-primary-600 hover:text-primary-500">
+          <Link to="/login" className="font-medium text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300">
             sign in to your existing account
           </Link>
         </p>
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <div className="bg-white dark:bg-gray-800 py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <div className="space-y-6">
             <div className="flex justify-center space-x-4">
               <button 
                 className={`px-4 py-2 rounded-lg flex-1 text-center font-medium ${
                   accountType === 'passenger' 
                     ? 'bg-primary-600 text-white' 
-                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                    : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600'
                 }`}
                 onClick={() => setAccountType('passenger')}
               >
@@ -108,7 +108,7 @@ const Register: React.FC = () => {
                 className={`px-4 py-2 rounded-lg flex-1 text-center font-medium ${
                   accountType === 'company' 
                     ? 'bg-primary-600 text-white' 
-                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                    : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600'
                 }`}
                 onClick={() => setAccountType('company')}
               >
@@ -118,7 +118,7 @@ const Register: React.FC = () => {
             
             <form onSubmit={handleSubmit} className="space-y-4">
               {error && (
-                <div className="bg-error-50 text-error-700 p-3 rounded-md text-sm">
+                <div className="bg-error-50 dark:bg-error-900 text-error-700 dark:text-error-300 p-3 rounded-md text-sm">
                   {error}
                 </div>
               )}
@@ -206,16 +206,16 @@ const Register: React.FC = () => {
                   id="terms"
                   name="terms"
                   type="checkbox"
-                  className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                  className="h-4 w-4 text-primary-600 dark:text-primary-400 focus:ring-primary-500 dark:focus:ring-primary-300 border-gray-300 dark:border-gray-600 rounded"
                   required
                 />
-                <label htmlFor="terms" className="ml-2 block text-sm text-gray-900">
+                <label htmlFor="terms" className="ml-2 block text-sm text-gray-900 dark:text-gray-300">
                   I agree to the{' '}
-                  <Link to="/terms" className="font-medium text-primary-600 hover:text-primary-500">
+                  <Link to="/terms" className="font-medium text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300">
                     Terms of Service
                   </Link>{' '}
                   and{' '}
-                  <Link to="/privacy" className="font-medium text-primary-600 hover:text-primary-500">
+                  <Link to="/privacy" className="font-medium text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300">
                     Privacy Policy
                   </Link>
                 </label>

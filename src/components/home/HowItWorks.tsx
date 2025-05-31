@@ -7,38 +7,38 @@ const steps = [
     title: 'Search',
     description: 'Enter your location and destination to find available taxi companies in your area.',
     icon: Search,
-    color: 'bg-primary-100 text-primary-600',
+    color: 'bg-primary-100 text-primary-600 dark:bg-primary-800 dark:text-primary-300',
   },
   {
     id: 2,
     title: 'Compare & Select',
     description: 'Browse ratings, prices, and available vehicles from different taxi companies.',
     icon: Calendar,
-    color: 'bg-secondary-100 text-secondary-600',
+    color: 'bg-secondary-100 text-secondary-600 dark:bg-secondary-800 dark:text-secondary-300',
   },
   {
     id: 3,
     title: 'Book & Pay',
     description: 'Choose your preferred taxi company and complete your booking with secure payment.',
     icon: CreditCard,
-    color: 'bg-accent-100 text-accent-600',
+    color: 'bg-accent-100 text-accent-600 dark:bg-accent-800 dark:text-accent-300',
   },
   {
     id: 4,
     title: 'Enjoy Your Ride',
     description: 'Track your taxi in real-time and enjoy a comfortable ride to your destination.',
     icon: Car,
-    color: 'bg-success-50 text-success-700',
+    color: 'bg-success-50 text-success-700 dark:bg-success-900 dark:text-success-400',
   },
 ];
 
 const HowItWorks: React.FC = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">How TaxiHub Works</h2>
-          <p className="mt-4 text-xl text-gray-600">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">How TaxiHub Works</h2>
+          <p className="mt-4 text-xl text-gray-600 dark:text-gray-400">
             Book your ride in just a few simple steps
           </p>
         </div>
@@ -52,16 +52,16 @@ const HowItWorks: React.FC = () => {
                 </div>
                 
                 {step.id < steps.length && (
-                  <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gray-200">
-                    <div className="absolute right-0 -top-1 h-2 w-2 rounded-full bg-gray-300"></div>
+                  <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gray-200 dark:bg-gray-700">
+                    <div className="absolute right-0 -top-1 h-2 w-2 rounded-full bg-gray-300 dark:bg-gray-500"></div>
                   </div>
                 )}
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 {step.title}
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-400">
                 {step.description}
               </p>
             </div>

@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 const CompanyPromo: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-primary-800 to-primary-900 text-white">
+    <section className="py-16 bg-gradient-to-r from-primary-800 to-primary-900 text-white dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold">Own a Taxi Company?</h2>
-            <p className="mt-4 text-xl text-gray-300">
+            <p className="mt-4 text-xl text-gray-300 dark:text-gray-400">
               Join TaxiHub and expand your customer base. Manage bookings, increase visibility, and grow your business.
             </p>
             
@@ -19,7 +19,7 @@ const CompanyPromo: React.FC = () => {
                 <CheckCircle className="h-6 w-6 text-accent-400 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Increase Your Bookings</h3>
-                  <p className="text-gray-300">Get connected with thousands of potential customers looking for taxi services in your area.</p>
+                  <p className="text-gray-300 dark:text-gray-400">Get connected with thousands of potential customers looking for taxi services in your area.</p>
                 </div>
               </div>
               
@@ -27,7 +27,7 @@ const CompanyPromo: React.FC = () => {
                 <CheckCircle className="h-6 w-6 text-accent-400 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Streamlined Management</h3>
-                  <p className="text-gray-300">Manage all your bookings through our easy-to-use dashboard and mobile app.</p>
+                  <p className="text-gray-300 dark:text-gray-400">Manage all your bookings through our easy-to-use dashboard and mobile app.</p>
                 </div>
               </div>
               
@@ -35,7 +35,7 @@ const CompanyPromo: React.FC = () => {
                 <CheckCircle className="h-6 w-6 text-accent-400 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-lg">Boost Your Visibility</h3>
-                  <p className="text-gray-300">Get featured in search results and gain more exposure with our promotion options.</p>
+                  <p className="text-gray-300 dark:text-gray-400">Get featured in search results and gain more exposure with our promotion options.</p>
                 </div>
               </div>
             </div>
@@ -50,12 +50,12 @@ const CompanyPromo: React.FC = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-colors">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-colors dark:bg-gray-700/10 dark:hover:bg-gray-700/15">
               <div className="bg-accent-400 text-primary-800 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Gauge className="h-6 w-6" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Basic Plan</h3>
-              <p className="text-gray-300 mb-4">Get listed on our platform and start receiving bookings right away.</p>
+              <p className="text-gray-300 dark:text-gray-400 mb-4">Get listed on our platform and start receiving bookings right away.</p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center">
                   <CheckCircle className="h-4 w-4 text-accent-400 mr-2" />
@@ -73,7 +73,7 @@ const CompanyPromo: React.FC = () => {
               <p className="font-semibold text-xl">$49/month</p>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-colors relative">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-colors relative dark:bg-gray-700/10 dark:hover:bg-gray-700/15">
               <div className="absolute -top-3 -right-3 bg-accent-400 text-primary-900 text-xs font-bold px-3 py-1 rounded-full">
                 POPULAR
               </div>
@@ -81,7 +81,7 @@ const CompanyPromo: React.FC = () => {
                 <TrendingUp className="h-6 w-6" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Premium Plan</h3>
-              <p className="text-gray-300 mb-4">Get boosted visibility and priority in search results.</p>
+              <p className="text-gray-300 dark:text-gray-400 mb-4">Get boosted visibility and priority in search results.</p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center">
                   <CheckCircle className="h-4 w-4 text-accent-400 mr-2" />

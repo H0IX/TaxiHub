@@ -32,7 +32,7 @@ TaxiHub is a modern taxi booking platform built with React, TypeScript, Vite, Ta
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/taxihub.git
+git https://github.com/H0IX/TaxiHub.git
 cd TaxiHub
 npm install
 ```

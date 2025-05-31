@@ -30,18 +30,18 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-16 bg-primary-50">
+    <section className="py-16 bg-primary-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">What Our Users Say</h2>
-          <p className="mt-4 text-xl text-gray-600">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">What Our Users Say</h2>
+          <p className="mt-4 text-xl text-gray-600 dark:text-gray-400">
             Hear from passengers who use TaxiHub every day
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white rounded-xl shadow-sm p-6 relative">
+            <div key={testimonial.id} className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 relative">
               <div className="absolute -top-4 -right-4 bg-accent-400 rounded-full p-2">
                 <Quote className="h-5 w-5 text-white" />
               </div>
@@ -53,8 +53,8 @@ const Testimonials: React.FC = () => {
                   className="w-14 h-14 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{testimonial.role}</p>
                 </div>
               </div>
               
@@ -65,13 +65,13 @@ const Testimonials: React.FC = () => {
                     className={`h-4 w-4 ${
                       i < testimonial.rating 
                         ? 'text-accent-400 fill-accent-400' 
-                        : 'text-gray-300'
+                        : 'text-gray-300 dark:text-gray-600'
                     }`}
                   />
                 ))}
               </div>
               
-              <p className="text-gray-700">{testimonial.content}</p>
+              <p className="text-gray-700 dark:text-gray-300">{testimonial.content}</p>
             </div>
           ))}
         </div>
